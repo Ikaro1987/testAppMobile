@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="TestApp.Views.TestPage"
+    Title="Test">
+	<ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout AbsoluteLayout.LayoutFlags="All"
+                         AbsoluteLayout.LayoutBounds="1,1,1,1"
+                         BackgroundColor="White">
+                <Label x:Name="lblCounter" Text=""></Label>
+                
+                <StackLayout x:Name="slContent"></StackLayout>
+                <Button Clicked="Handle_Clicked" Text="Open!"></Button>
+            </StackLayout>
+<!--
+            <StackLayout AbsoluteLayout.LayoutFlags="All"
+                        AbsoluteLayout.LayoutBounds="1,1,1,1"
+                        BackgroundColor="White"
+                        Opacity="0.4"
+                        IsVisible="{Binding ShowBlur}">
+            </StackLayout>
+
+            <StackLayout AbsoluteLayout.LayoutFlags="All"
+                         AbsoluteLayout.LayoutBounds="1,1,1,1"
+                         BackgroundColor="White"
+                         Margin="25"
+                         IsVisible="{Binding ShowPopup}">
+                <Label HorizontalOptions="CenterAndExpand" 
+                       VerticalOptions="CenterAndExpand" 
+                       Text="pop up">
+                </Label>
+                <Button Clicked="Handle_Clicked" Text="Close!"></Button>
+            </StackLayout>-->
+
+        </AbsoluteLayout>
+
+        
+
+	</ContentPage.Content>
+</ContentPage>

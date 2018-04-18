@@ -5,6 +5,7 @@ using Xamarin.Forms;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Push;
 
 namespace TestApp
 {
@@ -34,7 +35,8 @@ namespace TestApp
 
             AppCenter.Start("ios=f2d958dd-5395-46da-8ee1-dad76c30bc9f;", 
                             typeof(Analytics), 
-                            typeof(Crashes));
+                            typeof(Crashes),
+                            typeof(Push));
         }
     }
 }
